@@ -1,2 +1,3 @@
 #! /usr/bin/env ruby
-puts Dir.entries(".")
+puts Dir.entries(Dir.pwd)
+
