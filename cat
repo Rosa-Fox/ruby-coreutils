@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+
+f = File.open("ingredients.txt")
+
+while catfile = f.gets do
+    puts catfile
+end
+
+f.close
