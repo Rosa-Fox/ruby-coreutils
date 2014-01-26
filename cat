@@ -1,10 +1,11 @@
 #! /usr/bin/env ruby
 
-  file = gets file.Dirname
+  file = ARGV[0]
 
   File.open(file) do |f|
     while catfile = f.gets do
       puts catfile
     end
   end
+
 
