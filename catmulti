@@ -1,0 +1,11 @@
+#! /usr/bin/env ruby
+
+#first array (named fls) stores the list of files in the current working directory
+fls = #{Dir.entries(Dir.pwd)}
+
+
+#interate through the 'fls' array using readlines which returns another array. We go through the array using the each method to print the lines #from each file
+File.readlines(fls).each do |line|
+    puts line
+end
+
