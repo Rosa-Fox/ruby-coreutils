@@ -1,6 +1,6 @@
 #! /usr/bin/env ruby
 
-  file = ARGV.each do |arg|
+  ARGV.each do |arg|
   File.readlines(arg).each do |line|
     puts line
     end
