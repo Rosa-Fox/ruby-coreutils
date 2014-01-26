@@ -1,9 +1,9 @@
 #! /usr/bin/env ruby
 
-f = File.open("ingredients.txt")
+  file = ARGV[0]
 
-while catfile = f.gets do
-    puts catfile
-end
-
-f.close
+  File.open(file) do |f|
+    while catfile = f.gets do
+      puts catfile
+    end
+  end
