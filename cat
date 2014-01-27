@@ -1,9 +1,7 @@
 #! /usr/bin/env ruby
 
-  file = ARGV[0]
-
-  File.open(file) do |f|
-    while catfile = f.gets do
-      puts catfile
+  ARGV.each do |arg|
+  File.readlines(arg).each do |line|
+    puts line
     end
   end
